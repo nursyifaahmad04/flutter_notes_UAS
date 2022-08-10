@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notes_UAS/screens/note_list.dart';
+import 'package:flutter_notes_UAS/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'NoteKeeper',
+      title: 'NoteQu',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
@@ -38,7 +39,7 @@ class MyApp extends StatelessWidget {
               fontSize: 14),
         ),
       ),
-      home: const NoteList(),
+      home: SplashScreenPage(),
     );
   }
 }
